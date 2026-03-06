@@ -1,9 +1,9 @@
 // setup variables
 const walkAcceleration = 2.5; // how much is added to the speed each frame
-const gravity = 0.5; // how much is subtracted from speedY each frame
+const gravity = 0.75; // how much is subtracted from speedY each frame
 const friction = 1.5; // how much the player is slowed each frame
 const maxSpeed = 8; // maximum horizontal speed, not vertical
-const playerJumpStrength = 12; // this is subtracted from the speedY each jump
+const playerJumpStrength = 17; // this is subtracted from the speedY each jump
 const projectileSpeed = 8; // the speed of projectiles
 let shouldDrawGrid = false;
 let gridMade = false;
@@ -77,12 +77,12 @@ let fakePlatforms = [];
 let badPlatforms = [];
 let cannons = [];
 const cannonWidth = 118;
-const cannonHeight = 80;
+const cannonHeight = 90;
 let projectiles = [];
-const defaultProjectileWidth = 24;
+const defaultProjectileWidth = 40;
 const defaultProjectileHeight = defaultProjectileWidth;
-const collectableWidth = 40;
-const collectableHeight = 40;
+const collectableWidth = 50;
+const collectableHeight = 50;
 let collectables = [];
 
 // canvas and context variables; must be initialized later
@@ -101,5 +101,11 @@ var collectableList = {
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+
+  botwplate: { image: "images/collectables/gs_botwplate.png" },
+  baja: { image: "images/collectables/gs_baja.png" },
+  tempura: { image: "images/collectables/gs_tempura.png" },
+  ctrcandy: { image: "images/collectables/gs_ctrcandy.png" },
+  govcheese: { image: "images/collectables/gs_govcheese.png" },
+  cfh: { image: "images/collectables/gs_cfh.png" }
 };

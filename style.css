@@ -17,7 +17,7 @@ nav {
     display: flex;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 h1 {
@@ -50,22 +50,24 @@ main {
     background: rgb(245, 238, 219);
     display: flex;
     margin-top: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 .sidebar {
-    margin-right: 25px;
+    margin-left: 2px;
     padding: 10px;
 }
 
 .sidebar-img {
-    width: 200px;
+    height: 235px;
     border-radius: 8px;
+    margin-top: 9px;
+    margin-left: 12px;
 }
 
 .content {
     flex: 1;
-    padding: 15px;
+    padding: 20px;
 }
 
 /* interests section styles */
@@ -78,4 +80,90 @@ main {
 
 h2, h3 {
     margin: 0px;
+}
+
+ul {
+ line-height: 25px;
+  font-weight: bold;
+  color: rgba(1, 80, 18, 0.664);;
+}
+/* Portfolio styles */
+.content h1 {
+  color: black;
+}
+
+#portfolio {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#portfolio li {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#portfolio li:hover {
+  background: #eee;
+}
+
+#portfolio a {
+  text-decoration: none;
+  color: #454545;
+}
+/* responsive web design */
+@media screen and (min-width: 120px) and (max-width: 1080px) {
+  main {
+    height: 1001px;
+    zoom: 0.75;
+    display: grid;
+    border-radius: 24px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin-top: 20px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  #all-contents {
+    height: 100ch;
+    margin: none;
+  }
+
+  a {
+    font-size: 30px;
+  }
+
+  .sidebar {
+    margin-right: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sidebar-img {
+    height: 105%;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 12px;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .content {
+    align-content: center;
+    justify-content: center;
+  }
 }
